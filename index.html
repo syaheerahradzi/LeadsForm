@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Semak Pelan Takaful</title>
+
+<style>
+body{
+font-family:Arial,sans-serif;
+max-width:600px;
+margin:auto;
+padding:20px;
+}
+
+h2{
+text-align:center;
+}
+
+input,select{
+width:100%;
+padding:12px;
+margin:10px 0;
+box-sizing:border-box;
+}
+
+button{
+width:100%;
+padding:15px;
+font-size:18px;
+cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<h2>Semak Pelan Takaful</h2>
+
+<input id="nama" placeholder="Nama Penuh">
+
+<input id="umur" placeholder="Umur">
+
+<select id="status">
+<option>Bujang</option>
+<option>Berkahwin</option>
+</select>
+
+<select id="medical">
+<option>Ya</option>
+<option>Tidak</option>
+</select>
+
+<input id="bajet" placeholder="Bajet Bulanan">
+
+<input id="telefon" placeholder="Nombor Telefon">
+
+<button onclick="submitForm()">
+Semak Pelan
+</button>
+
+<script>
+
+function submitForm(){
+
+var nama=document.getElementById("nama").value;
+var umur=document.getElementById("umur").value;
+var status=document.getElementById("status").value;
+var medical=document.getElementById("medical").value;
+var bajet=document.getElementById("bajet").value;
+var telefon=document.getElementById("telefon").value;
+
+var message =
+"Hi saya berminat nak semak pelan.%0A%0A"+
+"Nama: "+nama+"%0A"+
+"Umur: "+umur+"%0A"+
+"Status: "+status+"%0A"+
+"Medical Card: "+medical+"%0A"+
+"Bajet: "+bajet+"%0A"+
+"Telefon: "+telefon;
+
+window.location.href =
+"https://wa.me/601143952210?text="+message;
+
+}
+
+</script>
+
+</body>
+</html>
