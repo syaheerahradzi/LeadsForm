@@ -641,13 +641,13 @@ id="dueDate">
 <button
 onclick="submitForm()">
 
-📲 Semak Pelan Sekarang
+FREE QUOTATION
 
 </button>
 
 <div class="footer">
 
-Terima kasih kerana memilih kami ❤️
+Terima kasih 🙂
 
 </div><script>
 
@@ -800,55 +800,24 @@ document.getElementById("dueDate").value;
 }
 
 let message=
-`Hi 👋
+`
 
-Saya ingin membuat semakan pelan takaful.
-
--------------------------
-📋 PELAN
 ${plan.value}
 
-👤 MAKLUMAT
-
-Nama:
-${nama}
-
-Umur:
-${umur}
-
-Tarikh Lahir:
-${dob}
-
-Jantina:
-${gender}
-
-🏥 KESIHATAN
-
-Sejarah Kesihatan:
-${history}
-
-Merokok/Vape:
-${smoking}
-
-💼 PEKERJAAN
-
-${occupation}
-
-💰 Bajet
-
-${budget}`;
+Nama: ${nama}
+Umur: ${umur}
+Tarikh Lahir:${dob}
+Jantina:${gender}
+Sejarah Kesihatan:${history}
+Merokok/Vape:${smoking}
+Pekerjaan:${occupation}
+Budget:${budget}`;
 
 if(plan.value==="Prebirth Medical Card"){
 
 message+=`
-
-🤰 KEHAMILAN
-
-Minggu:
-${pregnancyWeek}
-
-Due Date:
-${dueDate}`;
+Minggu Kehamilan:${pregnancyWeek}
+Expected Due Date:${dueDate}`;
 
 }
 
